@@ -1,0 +1,27 @@
+{
+  "name": "griffin",
+  "version": "1.0.0",
+  "description": "simple quotes api",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m3dos/griffin.git"
+  },
+  "keywords": [
+    "quotes",
+    "demo"
+  ],
+  "author": "Dave York (daveyork@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m3dos/griffin/issues"
+  },
+  "homepage": "https://github.com/m3dos/griffin#readme"
+}
