@@ -2,13 +2,13 @@
   "name": "griffin",
   "version": "1.0.0",
   "description": "simple quotes api",
-  "main": "index.js",
+  "main": "app.js",
   "directories": {
     "test": "tests"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/m3dos/griffin/issues"
   },
-  "homepage": "https://github.com/m3dos/griffin#readme"
+  "homepage": "https://github.com/m3dos/griffin#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }

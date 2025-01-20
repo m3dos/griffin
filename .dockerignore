@@ -1,0 +1,20 @@
+# .dockerignore
+
+# Node stuff
+node_modules
+
+# Git
+.git
+.gitignore
+
+# Docker itself
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Logs
+*.log
+
+# Exclude environment files
+.env
+.env.*
