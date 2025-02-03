@@ -128,3 +128,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# python virtual envs
+venv/
+
+# terraform
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+# Local .terraform directories
+infra/.terraform/*
+infra/.terraform/.terraform.lock.hcl
