@@ -1,0 +1,27 @@
+[
+    {
+      "name": "my_container",
+      "image": "588965866330.dkr.ecr.us-east-2.amazonaws.com/medos/dev:latest",
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "environment": [
+        {
+          "name": "NODE_ENV",
+          "value": "production"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/griffin",
+          "awslogs-region": "us-east-2",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]

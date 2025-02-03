@@ -135,6 +135,6 @@ venv/
 # terraform
 infra/terraform.tfstate
 infra/terraform.tfstate.backup
-# Local .terraform directories
 infra/.terraform/*
-infra/.terraform/.terraform.lock.hcl
+infra/.terraform.lock.hcl
+infra/.terraform.lock.hcl
