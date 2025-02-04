@@ -25,6 +25,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install dependencies
+        working-directory: app
         run: npm ci
 
       # - name: Run tests
