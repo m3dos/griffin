@@ -38,7 +38,7 @@ jobs:
       - name: Run tests
         working-directory: app
         run: npm test
-
+#
       # # Optional: Run linter if you have one configured
       # - name: Lint code
       #   run: npm run lint
