@@ -1,8 +1,15 @@
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main         # Trigger only when pushing to the 'main' branch.
+    paths:
+      - 'app/**'     # Trigger only if a file under the 'app/' directory has changed.
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+    paths:
+      - 'app/**'
+
 
 jobs:
   build-and-test:
@@ -28,8 +35,8 @@ jobs:
         working-directory: app
         run: npm ci
 
-      # - name: Run tests
-      #   run: npm test
+      - name: Run tests
+        run: npm test
 
       # # Optional: Run linter if you have one configured
       # - name: Lint code
