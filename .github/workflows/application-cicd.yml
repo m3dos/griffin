@@ -4,11 +4,13 @@ on:
       - main         # Trigger only when pushing to the 'main' branch.
     paths:
       - 'app/**'     # Trigger only if a file under the 'app/' directory has changed.
+      - '.github/workflows/application-cicd.yml'  # Trigger if the workflow file itself changes.
   pull_request:
     branches:
-      - main
+      - main      # Trigger only when a pull request targets the 'main' branch.
     paths:
-      - 'app/**'
+      - 'app/**'   # Trigger only if a file under the 'app/' directory has changed.
+      - '.github/workflows/application-cicd.yml'  # Trigger if the workflow file itself changes.
 
 
 jobs:
