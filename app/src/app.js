@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Simple Route (Health Check)
 app.get('/health', (req, res) => {
-  res.json({ status: 'fucked, totally fucked' });
+  res.json({ status: 'health check passed' });
 });
 
 // Example API Route

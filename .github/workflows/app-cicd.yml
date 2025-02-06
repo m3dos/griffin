@@ -1,17 +1,10 @@
 on:
-  push:
-    branches:
-      - main         # Trigger only when pushing to the 'main' branch.
-    paths:
-      - 'app/**'     # Trigger only if a file under the 'app/' directory has changed.
-      - '.github/workflows/application-cicd.yml'  # Trigger if the workflow file itself changes.
   pull_request:
     branches:
       - main      # Trigger only when a pull request targets the 'main' branch.
     paths:
       - 'app/**'   # Trigger only if a file under the 'app/' directory has changed.
-      - '.github/workflows/application-cicd.yml'  # Trigger if the workflow file itself changes.
-
+      - '.github/workflows/app-cicd.yml'  # Trigger if the workflow file itself changes.
 
 jobs:
   build-and-test:
@@ -58,7 +51,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-2  # Change this to your AWS region if needed.
+          aws-region: us-east-2 
 
       # Log in to Amazon ECR.
       - name: Login to Amazon ECR
